@@ -1,0 +1,13 @@
+.header {
+  @include flexColumnCentered;
+  position: relative;
+  &__nav {
+    background-color: $cerulean;
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    @include flexColumnCentered;
+  }
+}

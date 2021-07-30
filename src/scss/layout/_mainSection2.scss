@@ -1,0 +1,74 @@
+.main {
+  &__section2 {
+    background-color: $ice-blue;
+    line-height: 30px;
+    padding: 30px 15px 60px;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      padding: 30px 40px 60px;
+      grid-template-rows: reapet(3, 1fr);
+      &--item1,
+      &--item5 {
+        grid-column: 1 / 4;
+      }
+    }
+  }
+}
+
+.section2 {
+  &__title {
+    font-family: $second-font;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 45px;
+    @media (min-width: 768px) {
+      font-size: 26px;
+    }
+    @media (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  &__subtitle {
+    font-family: $second-font;
+    font-weight: bold;
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  &__parr {
+    padding-bottom: 45px;
+    max-width: 180px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+      padding-bottom: 60px;
+      max-width: 212.3px;
+    }
+  }
+}
+
+.buttonSection2 {
+  width: 184px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 22.5px;
+  background-color: $bright-orange;
+  color: $white;
+  text-align: center;
+  line-height: 2.25;
+  transition: transform 2s ease-in-out;
+  &:hover {
+    transform: rotate(30deg);
+  }
+  @media (min-width: 768px) {
+    width: 210px;
+  }
+  @media (min-width: 1200px) {
+    width: 255px;
+  }
+}
