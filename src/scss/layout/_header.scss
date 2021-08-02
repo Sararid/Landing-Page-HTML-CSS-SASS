@@ -1,4 +1,4 @@
-.header {
+/* .header {
   @include flexColumnCentered;
   position: relative;
   &__nav {
@@ -10,4 +10,27 @@
     left: 0;
     @include flexColumnCentered;
   }
+} */
+
+.header {
+  &__nav {
+    background-color: $cerulean;
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    @include flexColumnCentered;
+  }
 }
+/*  en el header podría haber indicado menos propiedades y dejarlo de la siguiente manera ya que cumple el proposito
+
+.header {
+  
+  &__nav {
+    background-color: $cerulean;
+    width: 44px;
+    height: 44px;
+    position: fixed;
+    @include flexColumnCentered;
+  }
+}
+*/

@@ -1,12 +1,12 @@
 .hero {
-  height: 100%;
-  width: 100%;
+  height: 100%; /*  es el 100% del height del body 100vh que lo pudiera haber puesto aqui directamente*/
+  width: 100%; /*  tmbien no hace nada, podrai quitarlo o reemplazarlo por 100vw*/
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top; /* para que la imagen este centrada x (horizontal) y arriba y (vertical)*/
 
-  @include flexColumnCentered;
+  @include flexColumnCentered; /* He puesto este flex para centrar los 3 elementos y poner columna */
   text-align: center;
   color: $white;
 
