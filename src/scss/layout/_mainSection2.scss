@@ -4,7 +4,7 @@
     line-height: 30px;
     padding: 30px 15px 60px;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, auto; /* tmb 1fr 1fr 1fr */
     grid-template-rows: repeat (5, 1fr);
     align-items: center;
     justify-items: center;
@@ -16,6 +16,9 @@
       &--item1,
       &--item5 {
         grid-column: 1 / 4;
+      }
+      @media (min-width: 1200px) {
+        padding: 60px 0;
       }
     }
   }
